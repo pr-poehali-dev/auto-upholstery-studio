@@ -262,7 +262,8 @@ export default function Index() {
             </p>
           </div>
 
-          <Tabs defaultValue="all" className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto">
+          <Tabs defaultValue="all">
             <TabsList className="grid w-full grid-cols-4 mb-12">
               <TabsTrigger value="all">Все</TabsTrigger>
               <TabsTrigger value="leather">Кожа</TabsTrigger>
@@ -354,6 +355,7 @@ export default function Index() {
               </Card>
             </TabsContent>
           </Tabs>
+          </div>
         </div>
       </section>
 
