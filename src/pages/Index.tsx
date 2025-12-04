@@ -119,23 +119,25 @@ export default function Index() {
 
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b">
-        <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Car" className="text-primary" size={28} />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-primary/95 via-accent/95 to-secondary/95 backdrop-blur-md shadow-lg">
+        <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md">
+              <Icon name="Car" className="text-primary" size={24} />
+            </div>
+            <span className="text-2xl font-extrabold text-white drop-shadow-md">
               AutoAtelier
             </span>
           </div>
-          <div className="hidden md:flex items-center gap-6">
-            <a href="#services" className="text-sm font-medium hover:text-primary transition">Услуги</a>
-            <a href="#portfolio" className="text-sm font-medium hover:text-primary transition">Портфолио</a>
-            <a href="#materials" className="text-sm font-medium hover:text-primary transition">Материалы</a>
-            <a href="#reviews" className="text-sm font-medium hover:text-primary transition">Отзывы</a>
-            <a href="#contact" className="text-sm font-medium hover:text-primary transition">Контакты</a>
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#services" className="text-white/90 text-sm font-semibold hover:text-white hover:scale-105 transition-all">Услуги</a>
+            <a href="#portfolio" className="text-white/90 text-sm font-semibold hover:text-white hover:scale-105 transition-all">Портфолио</a>
+            <a href="#materials" className="text-white/90 text-sm font-semibold hover:text-white hover:scale-105 transition-all">Материалы</a>
+            <a href="#reviews" className="text-white/90 text-sm font-semibold hover:text-white hover:scale-105 transition-all">Отзывы</a>
+            <a href="#contact" className="text-white/90 text-sm font-semibold hover:text-white hover:scale-105 transition-all">Контакты</a>
           </div>
-          <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90">
-            <Icon name="Phone" size={16} className="mr-2" />
+          <Button className="bg-white text-primary hover:bg-white/90 font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <Icon name="Phone" size={18} className="mr-2" />
             Позвонить
           </Button>
         </nav>
